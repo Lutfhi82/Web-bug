@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "assets/**", "use": "@vercel/static" }
+  ],
+  "routes": [
+    { "src": "/", "dest": "/assets/index.html" },
+    { "src": "/login", "dest": "/assets/login.html" }
+  ]
+}

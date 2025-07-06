@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Radzz | NGR - ApiBug</title>
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+  <div id="particles-js"></div>
+  <div class="container">
+    <h1>Nagara Api-Bug</h1>
+    <input type="text" id="numberInput" placeholder="Input Target Number (628xxx)">
+    <select id="typeSelect">
+      <option value="">Select Bug Here</option>
+      <option value="1">Force Close</option>
+      <option value="2">Force Close 2</option>
+    </select>
+    <button onclick="sendRequest()">Send</button>
+    <p>Server Status: Online</p>
+  </div>
+  <button id="store-btn" title="Store">🛒</button>
+<div id="store-popup">
+  <div class="store-box">
+    <h2>Pilih Paket Akses</h2>
+    <ul>
+      <li onclick="buy('1 Hari')">1 Hari</li>
+      <li onclick="buy('3 Hari')">3 Hari</li>
+      <li onclick="buy('1 Minggu')">1 Minggu</li>
+      <li onclick="buy('1 Bulan')">1 bulan</li>
+      <li onclick="buy('3 Bulan')">3 Bulan</li>
+      <li onclick="buy('Permanen')">Permanen</li>
+    </ul>
+    <p>Click akses paket yg anda inginkan, kemudian lanjutkan ke WhatsApp owner dengan format sama agar cepat di proses</p>
+  </div>
+</div>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="/assets/app.js"></script>
+  <script>
+      checkSession()
+  </script>
+</body>
+</html>
