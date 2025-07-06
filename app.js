@@ -1,4 +1,4 @@
-const DATA_URL = 'github db mu';
+const DATA_URL = 'https://raw.githubusercontent.com/Lutfhi82/database-username/refs/heads/main/res.json';
 
 async function login() {
   const user = document.getElementById("username").value.trim();
